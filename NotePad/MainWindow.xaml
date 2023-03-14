@@ -1,0 +1,31 @@
+﻿<Window x:Class="NotePad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePad"
+        mc:Ignorable="d"
+        Title="Notes" Height="600" Width="790" MinHeight="300" MinWidth="400"
+        Closing="Window_Closing" Background="Black">
+
+    <Grid>
+        <DockPanel x:Name="dockPanel">
+            <ToolBar x:Name="toolBar" DockPanel.Dock="Top">
+                <ToggleButton Name="btnBold" Checked="btnBold_Checked" Unchecked="btnBold_Unchecked">
+                    <Image Source="C:\Users\bycks\source\repos\NotePad\NotePad\Icons\bold.png" Width="16" Height="16" />
+                </ToggleButton>
+                <ToggleButton Name="btnItalic" Checked="btnItalic_Checked" Unchecked="btnItalic_Unchecked">
+                    <Image Source="C:\Users\bycks\source\repos\NotePad\NotePad\Icons\italic.png" Width="16" Height="16" />
+                </ToggleButton>
+                <ToggleButton Name="btnUnderline" Checked="btnUnderline_Checked" Unchecked="btnUnderline_Unchecked">
+                    <Image Source="C:\Users\bycks\source\repos\NotePad\NotePad\Icons\underline.png" Width="16" Height="16" />
+                </ToggleButton>
+                <Separator />
+                <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged" />
+                <ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged" />
+                <ComboBox Name="cmbColor" Width="140" IsEditable="True" SelectionChanged="cmbColor_SelectionChanged" />
+            </ToolBar>
+            <TextBox  Name="textBox" TextWrapping="Wrap" AcceptsReturn="True" Background="Bisque"/>
+        </DockPanel>
+    </Grid>
+</Window>
