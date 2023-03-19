@@ -17,6 +17,7 @@ using Microsoft.Win32;
 using System.Drawing.Text;
 using System.Drawing;
 using System.Text.RegularExpressions;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace NotePad
 {
@@ -95,7 +96,7 @@ namespace NotePad
         {
             if (cmbFontSize.SelectedItem != null)
                 textBox.FontSize = double.Parse(cmbFontSize.Text);
-            else if (cmbFontSize.Text != "")
+            else if (cmbFontSize.Text != "" && cmbFontSize.Text != "0")
             {
                 textBox.FontSize = double.Parse(cmbFontSize.Text);
             }

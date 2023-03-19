@@ -1,21 +1,8 @@
-Georgia
-111
-MediumVioletRed
-grgr
-grgr
-Привет мир!
-ага
-
-
-
-
-
-
-
-
-
-
-
+Cuprum
+26
+CornflowerBlue
+Привет мир
+Hello World!
 
 
 
